@@ -26,8 +26,8 @@ body::after {
 }
 .chat-container {
   background-color: hsl(270, 20%, 96%);
-  width: 55%;
-  min-height: 50%;
+  width: 60vw;
+  min-height: 50vh;
   margin-top: -42.5vh;
   margin-left: auto;
   margin-right: auto;
