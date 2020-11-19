@@ -1,5 +1,5 @@
 
-main {
+main, html{
   height: 100vh;
   background-color: hsl(270, 20%, 96%);
   font-family: "Rubik", sans-serif;
@@ -85,7 +85,6 @@ body::after {
 }
 .chat-body {
   padding: 7px;
-  padding-bottom: 0;
 }
 .received-chat {
   max-width: 63%;
@@ -144,8 +143,21 @@ body::after {
  }
 input[type="radio"] {
   height: 15px;
-  border: 2px solid hsl(276 100% 94%);
   z-index: 2;
+  visibility: hidden;
+}
+input[type="radio"]::before{
+  content:"";
+  visibility: visible;
+  display: inline-block;
+border: 0.1rem solid hsl(276 100% 94%);
+width: 1rem;
+height: 1rem;
+margin-left:-1.1px;
+border-radius:50%
+}
+input[type="radio"]:checked::before{
+background-color: hsl(276, 100%, 96%);
 }
 input[type="text"] {
   color: hsl(206, 6%, 79%);
@@ -190,7 +202,17 @@ i {
   z-index:200;
   text-align: center;
   width: 80vw;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-bottom: 7.5vh;;
+}
+.header{
+  color: hsl(271, 36%, 24%);
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: 900;
 
+}
+.desc-body{
+  color: hsl(270, 7%, 64%);
+  font-size: 1rem;
 }
