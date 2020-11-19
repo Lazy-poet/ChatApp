@@ -121,7 +121,7 @@ body::after {
 }
 .billing {
   background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  max-width: 80%;
+  max-width: 75%;
   margin-bottom: 5px;
   font-size: 0.45rem;
   padding: 7px 10px 7px 7px;
