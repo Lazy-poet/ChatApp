@@ -31,7 +31,7 @@ body::after {
   margin-top: -42.5vh;
   margin-left: auto;
   margin-right: auto;
-  border: 2rem white solid;
+  border: 1.5rem white solid;
   border-radius: 5rem;
   z-index: 500;
   position: relative;
@@ -97,9 +97,9 @@ color: hsl(276, 100%, 90%);
   padding: 3%;
 }
 .received-chat {
-  max-width: 63%;
+  max-width: 65%;
   background-color: hsl(276, 100%, 94%);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: hsl(276, 55%, 52%);
   letter-spacing: -1px;
@@ -119,10 +119,10 @@ color: hsl(276, 100%, 90%);
   align-items: flex-end;
 }
 .sent-chat {
-  max-width: 63%;
+  max-width: 65%;
   background-color: white;
   border-radius: 2rem 2rem .5rem 2rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: hsl(271, 15%, 43%);
   letter-spacing: -1px;
