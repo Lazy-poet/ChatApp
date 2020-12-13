@@ -3,10 +3,11 @@ main, html{
   height: 100vh;
   background-color: hsl(270, 20%, 96%);
   font-family: "Rubik", sans-serif;
+  font-size: 16px;
 }
 .top-bg-color {
-  height: 50%;
-  width: 100%;
+  height: 50vh;
+  width: 100vw;
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   border-radius: 0 0 50% 50%;
   margin-left: -50%;
@@ -16,7 +17,7 @@ body::after {
  content:"";
   float: left;
   height: 60vh;
-  width: 50vw;
+  min-width: 50vw;
   margin-left: 50vw;
   margin-top: -50vh;
   background-color: hsl(276, 100%, 96%);
@@ -27,7 +28,6 @@ body::after {
 .chat-container {
   background-color: hsl(270, 20%, 96%);
   width: 60vw;
-  max-height: 70%;
   margin-top: -42.5vh;
   margin-left: auto;
   margin-right: auto;
@@ -232,7 +232,87 @@ i {
   font-size: 2.5rem;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1024px){
+.top-bg-color{
+height: 85vmin;
+margin-left: -10%;
+width: 40%;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-container{
+height: 650px;
+width: 350px;
+position: absolute;
+margin: auto;
+left: 28vw;
+border-radius: 50px;
+top: 15vh;
+}
 
+.chat-head{
+  height: 75px;
+  border-radius: 20px 20px 5px 5px
+}
+.notch{
+  height: 20px;
+}
+.avatar{
+  height: 36px
+}
+.chat-head > span{
+  font-size: 16px;
+}
+.username{
+  font-size: 16px;
+  left: 30%;
+  top: 40%
+}
+.chat-head > i{
+  font-size: 24px !important
+}
 
+.status{
+  font-size: 12px;
+left: 30%
+}
+
+.received-chat{
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 12px 12px 12px 3px;
+  padding: 2%
+}
+.images{
+  height: 50px;
+  border-radius: 12px;
+  margin-left: 10px
+}
+.sent-chat{
+font-size: 13.5px;
+font-weight: 400px;
+padding: 2%;
+border-radius: 12px 12px 3px 12px;
+}
+.billing{
+  font-size: 12px;
+  padding: 3%;
+  border-radius: 10px 10px 10px 5px;
+
+}
+.pricing{
+  font-size: 14px;
+  font-weight: 400px;
+}
+input[type="radio"]{
+  font-size: 20px
+}
+input[type="radio"]::before{
+  width: 16px;
+  height: 16px;
+  top: 5px;
+}
 }
